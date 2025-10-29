@@ -3,17 +3,26 @@
 
 ### Motivation  
 YouTube is one of the largest content platforms worldwide. Every day, thousands of videos are uploaded, but only a few make it to the trending list.  
-In this project, I aim to explore **which factors** (like video category, engagement rate, publish time, or title length) help a video go viral.  
-By focusing on trending videos in Turkey, I hope to find meaningful patterns about what viewers engage with most.
+Almost everyone watches YouTube every day, but have you ever wondered **why some videos suddenly go viral and appear on the trending list while others don’t?**  
+In this project, I want to understand what makes a video popular.  
+Do people prefer certain categories like music or entertainment?  
+Does uploading at a specific time affect views?  
+Do likes and comments really show how much people enjoy a video?  
+
+By analyzing YouTube trending videos in Turkey, I hope to find patterns that explain what helps a video reach more people.
 
 ---
 
 ### Contents
 - [Motivation](#motivation)
 - [Data Source](#data-source)
-- 
-- 
+- [Methodology](#methodology)
+- [Expected Outcomes](#expected-outcomes)
+- [Ethical Considerations](#ethical-considerations)
+
+  
 ---
+
 ### Data Source  
 - **Main dataset:** Kaggle — *YouTube Trending Video Dataset* (includes data for Turkey).  
 - **Extra data:** YouTube API (for category names).  
@@ -49,6 +58,3 @@ All data used will be **publicly available** and contain no personal information
 - Any AI assistance (like writing help) will be documented  
 
 ---
-
-
-
