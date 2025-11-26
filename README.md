@@ -82,8 +82,7 @@ Because DSA210 requires data enrichment, I created additional meaningful feature
 - days_until_trending = trending_date - publishedAt
   
 ---
-### Exploratory Data Analysis (EDA)
-In notebook 02_eda.ipynb, the following were analyzed:
+### Exploratory Data Analysis 
 
 **Distributions**
 - view_count distribution
