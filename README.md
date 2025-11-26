@@ -23,6 +23,9 @@ This analysis is based on the publicly available **YouTube Trending Video Datase
 - [Motivation](#motivation)
 - [Data Source](#data-source)
 - [Methodology](#methodology)
+- [Feature Engineering](#feature-engineering)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-(eda))
+- [Hypothesis Tests](#hypothesis-tests)
 - [Expected Outcomes](#expected-outcomes)
 - [Ethical Considerations](#ethical-considerations)
 
@@ -57,7 +60,7 @@ All data used will be **publicly available** and contain no personal information
    - Use Python libraries (matplotlib, seaborn, pandas) for charts and insights  
 
 ---
-### Feature Engineering (Data Enrichment)
+### Feature Engineering 
 Because DSA210 requires data enrichment, I created additional meaningful features:
 
 **Time-based features**
@@ -77,6 +80,54 @@ Because DSA210 requires data enrichment, I created additional meaningful feature
   
 **Trending behavior**
 - days_until_trending = trending_date - publishedAt
+  
+---
+### Exploratory Data Analysis (EDA)
+In notebook 02_eda.ipynb, the following were analyzed:
+
+**Distributions**
+- view_count distribution
+- likes distribution
+- comments distribution
+
+**Category exploration** 
+- category frequency
+- category vs view_count (boxplot)
+
+**Engagement & correlation**
+- correlation heatmap (views, likes, comments, engagement_score)
+- scatterplots (likes vs views, comments vs views)
+
+**Timing patterns**
+- publish_hour histogram
+- publish_day bar chart
+
+Each graph includes interpretation.
+
+---
+### Hypothesis Tests
+
+***HT1 — Category → View Count (ANOVA)***
+
+**H0:** Mean view counts are equal across categories
+
+**H1:** At least one category differs
+
+ANOVA + boxplot + p-value interpretation
+
+***HT2 — Upload Hour → View Count (ANOVA)***
+
+**H0:** Upload hour does not affect view count
+
+**H1:** At least one hour group differs
+
+Hours grouped into morning/afternoon/evening/night
+
+***HT3 — Likes vs Views (Correlation)***
+
+- Pearson correlation test
+- Scatter plot + regression line
+- p-value interpretation
 
 ---
 ### Expected Outcomes  
