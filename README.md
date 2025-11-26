@@ -2,14 +2,20 @@
 ## Project Proposal — DSA210 Term Project
 
 ### Motivation  
-YouTube is one of the largest content platforms worldwide. Every day, thousands of videos are uploaded, but only a few make it to the trending list.  
-Almost everyone watches YouTube every day, but have you ever wondered **why some videos suddenly go viral and appear on the trending list while others don’t?**  
-In this project, I want to understand what makes a video popular.  
-Do people prefer certain categories like music or entertainment?  
-Does uploading at a specific time affect views?  
-Do likes and comments really show how much people enjoy a video?  
+YouTube is one of the world’s largest content platforms, where thousands of videos are uploaded every day. However, only a small portion of them become “Trending.”
+This project aims to understand **what makes a video go viral globally** by exploring view counts, engagement metrics, upload timing, and video characteristics.
 
-By analyzing YouTube trending videos in Turkey, I hope to find patterns that explain what helps a video reach more people.
+The goal is to answer:
+
+- Which features influence video popularity?
+
+- Do categories matter?
+
+- Does upload time impact views?
+
+- Are likes a good indicator of popularity?
+
+This analysis is based on the publicly available **YouTube Trending Video Dataset** from Kaggle.
 
 ---
 
@@ -23,9 +29,17 @@ By analyzing YouTube trending videos in Turkey, I hope to find patterns that exp
   
 ---
 
-### Data Source  
-- **Main dataset:** Kaggle — *YouTube Trending Video Dataset* (includes data for Turkey).  
-- **Extra data:** YouTube API (for category names).  
+## Dataset  
+### Source 
+ Kaggle — "YouTube Trending Video Dataset"
+Dataset includes trending videos across multiple countries with columns such as:
+
+- video_id, title, publishedAt, channelTitle
+- categoryId, tags, view_count
+- likes, dislikes, comment_count
+- description, trending_date, comments_disabled
+
+This dataset is the global trending sample used for this project.
 All data used will be **publicly available** and contain no personal information.
 
 ---
@@ -43,7 +57,28 @@ All data used will be **publicly available** and contain no personal information
    - Use Python libraries (matplotlib, seaborn, pandas) for charts and insights  
 
 ---
+### Feature Engineering (Data Enrichment)
+Because DSA210 requires data enrichment, I created additional meaningful features:
 
+**Time-based features**
+- publish_hour
+- publish_day
+- publish_month
+  
+**Text-based features**
+- title_length
+- description_length
+- tag_count
+  
+**Engagement features**
+- like_ratio = likes / view_count
+- comment_ratio = comment_count / view_count
+- engagement_score = (likes + comment_count) / view_count
+  
+**Trending behavior**
+- days_until_trending = trending_date - publishedAt
+
+---
 ### Expected Outcomes  
 - Identify features that most influence video popularity  
 - Compare engagement trends across categories  
