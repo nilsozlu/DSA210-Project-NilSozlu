@@ -24,7 +24,7 @@ This analysis is based on the publicly available **YouTube Trending Video Datase
 - [Data Source](#data-source)
 - [Methodology](#methodology)
 - [Feature Engineering](#feature-engineering)
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-(eda))
+- [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Hypothesis Tests](#hypothesis-tests)
 - [Expected Outcomes](#expected-outcomes)
 - [Ethical Considerations](#ethical-considerations)
