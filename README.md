@@ -17,6 +17,8 @@ The goal is to answer:
 
 This analysis is based on the publicly available **YouTube Trending Video Dataset** from Kaggle.
 
+The link to the datasets that was used: https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset
+
 ---
 
 ### Contents
@@ -143,3 +145,17 @@ Hours grouped into morning/afternoon/evening/night
 - Any AI assistance (like writing help) will be documented  
 
 ---
+### Project Conclusions 
+
+In this project, I analyzed trending YouTube videos to understand the factors driving their popularity. Based on my analysis, here are the general takeaways:
+
+***1. Category is Key to Success*** My analysis revealed that the **video category plays a decisive role** in determining view counts. Certain categories, such as Music and Entertainment, consistently show a much higher potential for views compared to others like News or Education. This suggests that the type of content is a more significant factor for virality than random chance.
+
+***2. The "Best Upload Time" Myth*** Contrary to popular belief, I observed that the specific **time of day a video is uploaded does not have a critical impact** on its view count. While there may be slight fluctuations during certain hours, the difference is not significant enough to determine whether a video goes viral or not. Quality content tends to find its audience regardless of the upload hour.
+
+***3. Engagement (Likes) is the Strongest Signal*** I found a **very strong positive relationship** between the number of likes and the total view count. This confirms that user engagement is the most reliable indicator of a video's success and its promotion by the algorithm. High engagement rates are directly linked to broader reach.
+
+***Final Verdict:*** To maximize the chances of a video going viral, **content category** and **viewer engagement (likes)** are the most critical factors. Technical details, such as the exact hour of upload, have a negligible effect on overall success compared to these primary drivers.
+
+---
+
