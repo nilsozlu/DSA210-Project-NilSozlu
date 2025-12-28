@@ -158,4 +158,11 @@ In this project, I analyzed trending YouTube videos to understand the factors dr
 ***Final Verdict:*** To maximize the chances of a video going viral, **content category** and **viewer engagement (likes)** are the most critical factors. Technical details, such as the exact hour of upload, have a negligible effect on overall success compared to these primary drivers.
 
 ---
+## Machine Learning Analysis
+In the final stage of the project, I applied Machine Learning models to predict video popularity (view counts).
+
+* **Models Used:** Linear Regression and Random Forest Regressor.
+* **Results:** The Random Forest model achieved a high R² score, confirming that engagement metrics (likes, comments) are the strongest predictors of views.
+* **Visualization Update:** Based on feedback, EDA plots were updated to use a Log-10 scale to better represent the Power Law distribution of the data.
+---
 
